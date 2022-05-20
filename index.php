@@ -47,7 +47,7 @@
 							<label for="">NOM</label>
 						</div>
 						<div class="input-data">
-							<input type="text" id="surname" name="name" autocomplete="off" required>
+							<input type="text" id="last_name" name="name" autocomplete="off" required>
 							<label for="">PRENOM</label>
 						</div>
 						<div class="input-data">
@@ -61,12 +61,12 @@
 						</div>
 						<div class="time-row">
 							<div class="col s1">
-								<input id="last_name" type="time" class="validate" name='time1'>
+								<input id="time1" type="time" class="validate" name='time1'>
 								<label for="last_name">HEURE</label>
 							</div>
 							<p> A </p>
 							<div class="col s1">
-         						<input id="last_name" type="time" class="validate" name='time2'>
+         						<input id="time2" type="time" class="validate" name='time2'>
           						<label for="last_name">HEURE</label>
         					</div>
 						</div>
