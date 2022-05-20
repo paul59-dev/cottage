@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    margin-left: 50px;
+    text-align: center;
+}
+
+div p {
+    margin-top: 5px;
+}

@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>demande de salle</title>
+<?php include "../../res/components/header.php"; ?>
+<link rel="stylesheet" href="../css/send.css" />
 </head>
 <body>
     <?php
@@ -28,10 +23,13 @@
                     $pc = htmlspecialchars($_POST['pc']);
 
                     ?>
-
-                    <h3>Merci <?php echo $name ?> <?php echo $lastname ?>,</h3>
-                    <p>Votre <?php echo $objet ?> en <?php echo $room ?>, le <?php echo $date ?> de <?php echo $time1 ?> à <?php echo $time2 ?> avec <?php echo $pc ?> matériel informatique à bien été envoyer !</p>
-                    <p>Votre adresse mail : <?php echo $email ?></p>
+                    <div>
+                        <h3>Merci <?php echo $name ?> <?php echo $lastname ?>,</h3>
+                        <p>Votre <?php echo $objet ?> en <?php echo $room ?>,</p> 
+                        <p>Le <?php echo $date ?> de <?php echo $time1 ?> à <?php echo $time2 ?>,</p> 
+                        <p>Avec <?php echo $pc ?> matériel informatique à bien été envoyer !</p>
+                        <p>Votre adresse mail : <?php echo $email ?></p>
+                    </div>
 
     <?php    
                 }
@@ -43,5 +41,3 @@
     
 </body>
 </html>
-
-
