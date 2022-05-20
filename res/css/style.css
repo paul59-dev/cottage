@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.color_blue { color: blue; }
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+.formulaire,
+.calendrier {
+    height: 80%;
+}
+
+#container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.formulaire {
+    width: 40%;
+}
+
+.c {
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.formulaire .content select,
+.formulaire .content div {
+    margin: 20px;
+} 
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+select {
+    width: 50%;
+}
+
+.input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-radio {
+    height: 30px;
+    display: flex;
+}
+
+.time-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.material {
+    height: 100px;
+}
+
+#hardware_material {
+    width: 100%;
+}
+
+.btn {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CALENDRIER */
+
+.calendrier {
+    width: 60%;
+}
+
+.calendrier h1 {
+    text-align: center;
+}
+
+.calendrier-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.legend {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legend .float {
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legend .float p {
+    margin-left: 1em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+/* DATEPICKER */
+.modal{
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+
+}
+
+.formInput {
+    position: relative;
+    font: 300 1em/48px "Open Sans";
+    margin: 0 0 8px;
+    padding: 0;
+    border-bottom: 1px solid #c0c0c0;
+    border-radius: 4px;
+    overflow: hidden;
+    color: #505050;
+}
+.formInput:hover {
+    color: black;
+}
+.formInput i {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 47px;
+    line-height: 48px;
+    text-align: center;
+    /*background-color: #e0e0e0;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);*/
+    font-size: 1em;
+    transition: box-shadow .2s, color .3s, background-color .4s;
+}
+.formInput input {
+    box-sizing: border-box;
+    z-index: 1;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    font-size: 1em;
+    font: inherit;
+    border: 0;
+    margin: 0;
+    padding: 0 4px 0 56px;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    background: transparent;
+    color: inherit;
+    transition: border-color .2s, color .2s, background-color .4s;
+}
+
+.formInput input[disabled]:active,.formInput input[disabled]:focus,
+.formInput input[disabled]:hover {
+    border-color: transparent;
+    background-color: transparent;
+}
+.formInput input:active, .formInput input:focus,
+.formInput textarea:active, .formInput textarea:focus,
+.formInput.dateSelector:hover input{
+    border-color: #b0b0b0;
+    outline: none;
+    color: black;
+    background-color: rgba(0,0,0,0.025);
+}
+
+.formInput.dateSelector {
+    transition: background-color .2s;
+}
+
+/* ERROR INPUT */
+.ERROR_INPUT {
+    border-color: red;
+}
+
+/* IFRAME */
+iframe {
+    border-radius: 5px;
+}
