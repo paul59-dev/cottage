@@ -32,9 +32,6 @@
 								<optgroup label="1er Etage">
 									<option value="Salle Granny">Salle Granny</option>
 								</optgroup>
-								<optgroup label="A Distance">
-									<option value="Visioconférence">Visioconférence</option>
-								</optgroup>
 							</select>
 							<label>Nom de la Salle</label>
 						</div>
@@ -91,7 +88,7 @@
 		<!-- ====== CALENDRIER ====== -->
 
 		<div class='calendrier'>
-			<h1>Calendrier</h1>
+			<h1>Agenda</h1>
 			<div class='calendrier-container'>
 				<div class='anim-border'>
 					<span></span>
@@ -112,10 +109,6 @@
 					<div class="float">
 						<div class="carre" style="background-color: #1B887A; width: 20px; height: 20px;"></div>
 						<p>Salle Granny</p>
-					</div>
-					<div class="float">
-						<div class="carre" style="background-color: #7EC225; width: 20px; height: 20px;"></div>
-						<p>Visioconférence</p>
 					</div>
 				</div>
 			</div>

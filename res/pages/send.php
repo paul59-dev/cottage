@@ -24,11 +24,21 @@
 
                     ?>
                     <div>
+                        <img src="../images/LOGO-COTTAGE-2.jpg" />
                         <h3>Merci <?php echo $name ?> <?php echo $lastname ?>,</h3>
                         <p>Votre <?php echo $objet ?> en <?php echo $room ?>,</p> 
                         <p>Le <?php echo $date ?> de <?php echo $time1 ?> à <?php echo $time2 ?>,</p> 
-                        <p>Avec <?php echo $pc ?> matériel informatique à bien été envoyer !</p>
+                        <p>Avec <?php echo $pc ?> matériel informatique à <span style="color: #61CE70;"><b>bien été envoyer</b></span> !</p>
                         <p>Votre adresse mail : <?php echo $email ?></p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <form action="../../index.php">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">
+                                Page de réservation
+                            </button>
+                        </form>
                     </div>
 
     <?php    

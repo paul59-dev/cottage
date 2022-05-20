@@ -21,26 +21,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // DATE
-const select_date = document.getElementById("date")
-let date = new Date()
 
-let day = date.getDay()
-let month = date.getMonth()
-let year = date.getFullYear()
-
-const select_hour1 = document.getElementById("time1")
-const select_hour2= document.getElementById("time2")
-
-document.getElementById("btn_send").addEventListener("click", () => {
-    if (select_date.getDay() === date.getDay() && select_date.getMonth() === date.getMonth() && select_date.getFullYear() === date.getFullYear()) 
-    {
-        if (select_hour1.getHours() < date.getHours() && select_hour1.getMinutes() < date.getMinutes()) 
-        {
-            if (select_hour2.getHours() < date.getHours() && select_hour2.getMinutes() < date.getMinutes())
-            {
-                alert("Date incorrect !")
-            }
-        }
-    }
-})
 
