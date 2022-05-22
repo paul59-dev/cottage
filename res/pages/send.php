@@ -12,42 +12,44 @@
             {
                 if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
                 {
-                    $room = htmlspecialchars($_POST['salle']);
-                    $objet = htmlspecialchars($_POST['objet']);
-                    $lastname = htmlspecialchars($_POST['lastname']);
-                    $name = htmlspecialchars($_POST['name']);
-                    $email = htmlspecialchars($_POST['email']);
-                    $date = htmlspecialchars($_POST['date']);
-                    $time1 = htmlspecialchars($_POST['time1']);
-                    $time2 = htmlspecialchars($_POST['time2']);
-                    $pc = htmlspecialchars($_POST['pc']);
+                    if ($_POST['time1'] != $_POST['time2']) 
+                    {
+                        $room = htmlspecialchars($_POST['salle']);
+                        $objet = htmlspecialchars($_POST['objet']);
+                        $lastname = htmlspecialchars($_POST['lastname']);
+                        $name = htmlspecialchars($_POST['name']);
+                        $email = htmlspecialchars($_POST['email']);
+                        $date = htmlspecialchars($_POST['date']);
+                        $time1 = htmlspecialchars($_POST['time1']);
+                        $time2 = htmlspecialchars($_POST['time2']);
+                        $pc = htmlspecialchars($_POST['pc']);
+                        ?>
 
-                    ?>
-                    <div>
-                        <img src="../images/LOGO-COTTAGE-2.jpg" />
-                        <h3>Merci <?php echo $name ?> <?php echo $lastname ?>,</h3>
-                        <p>Votre <?php echo $objet ?> en <?php echo $room ?>,</p> 
-                        <p>Le <?php echo $date ?> de <?php echo $time1 ?> à <?php echo $time2 ?>,</p> 
-                        <p>Avec <?php echo $pc ?> matériel informatique à <span style="color: #61CE70;"><b>bien été envoyer</b></span> !</p>
-                        <p>Votre adresse mail : <?php echo $email ?></p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <form action="../../index.php">
-                            <button class="btn waves-effect waves-light" type="submit" name="action">
-                                Page de réservation
-                            </button>
-                        </form>
-                    </div>
+                        <div>
+                            <img src="../images/LOGO-COTTAGE-2.jpg" />
+                            <h3>Merci <?php echo $name ?> <?php echo $lastname ?>,</h3>
+                            <p>Votre <?php echo $objet ?> en <?php echo $room ?>,</p> 
+                            <p>Le <?php echo $date ?> de <?php echo $time1 ?> à <?php echo $time2 ?>,</p> 
+                            <p>Avec <?php echo $pc ?> matériel informatique à <span style="color: #61CE70;"><b>bien été envoyer</b></span> !</p>
+                            <p>Votre adresse mail : <?php echo $email ?></p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <form action="../../index.php">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">
+                                    Page de réservation
+                                </button>
+                            </form>
+                        </div>
 
     <?php    
+                    }
                 }
             }
         }
     }
 
     ?>
-    
 </body>
 </html>
