@@ -8,7 +8,7 @@
 
 		<div class='formulaire'>
 			<h1>Demande de salle</h1>
-			<form action="./res/pages/send.php" method="post" name="form">
+			<form action="./res/pages/send.php" method="post" name="form" onsubmit="return hour()">
 				<div class="c">
 					<div class='content'>
 						<div class="input-field col s12">
@@ -48,13 +48,13 @@
 						</div>
 						<div class="time-row">
 							<div class="col s1">
-								<input id="time1" type="time" class="validate" name='time1'>
-								<label for="last_name">HEURE</label>
+								<input id="time1" type="time" class="validate" name='time1' required>
+								<label for="last_name">HEURE DE DEPART</label>
 							</div>
 							<p> A </p>
 							<div class="col s1">
-         						<input id="time2" type="time" class="validate" name='time2'>
-          						<label for="last_name">HEURE</label>
+         						<input id="time2" type="time" class="validate" name='time2' required>
+          						<label for="last_name">HEURE DE FIN</label>
         					</div>
 						</div>
 						<div class="input-data input-field material col s12">
@@ -122,6 +122,8 @@
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="sweetalert2.min.css">
 	<script src="./res/javascript/app.js"></script>
 
 	<!-- ====== /JAVASCRIPT ====== -->

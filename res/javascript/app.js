@@ -1,3 +1,10 @@
+// VARIABLE
+const object = document.getElementById("object")
+const nom = document.getElementById("name")
+const lasname = document.getElementById("lastname")
+const email = document.getElementById("email")
+const date = document.getElementById("date")
+
 // MATERIALIZE
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.datepicker');
@@ -19,16 +26,23 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.getElementById("hardware_material")
     var instances = M.FormSelect.init(elems);
 
-    // DATE
-    document.getElementById("btn_send").addEventListener("submit", (event) => {
-        const start_time = document.getElementById("time1")
-        const end_time = document.getElementById("time2")
-        event.preventDefault()
-
-        console.log(start_time.value)
-
-        if (start_time.value <= end_time.value || start_time.value === end_time.value) {
-            alert("coucou")
-        }
-    })
 });
+
+function hour() {
+    // DATE
+    const start_time = document.getElementById("time1")
+    const end_time = document.getElementById("time2")
+
+    console.log(start_time.value)
+
+    if (start_time.value === end_time.value || start_time.value > end_time.value) {
+        swal({
+            icon: 'warning',
+            title: 'Oops...',
+            text: "L' heure n'est pas valide !",
+        })
+        return false
+    }
+    return true
+}
+
