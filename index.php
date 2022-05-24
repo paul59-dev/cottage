@@ -43,7 +43,7 @@
 						</div>
 						
 						<div class="input-data">
-							<input type="text" id="date" name="date" autocomplete="off" class="datepicker">
+							<input type="text" id="date" name="date" autocomplete="off" class="datepicker" required>
 							<label for="">DATE</label>
 						</div>
 						<div class="time-row">
@@ -122,8 +122,8 @@
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="sweetalert2.min.js"></script>
-	<link rel="stylesheet" href="sweetalert2.min.css">
+	<!-- <script src="sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="sweetalert2.min.css"> -->
 	<script src="./res/javascript/app.js"></script>
 
 	<!-- ====== /JAVASCRIPT ====== -->

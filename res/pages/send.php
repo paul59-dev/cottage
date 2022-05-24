@@ -30,7 +30,7 @@
                             <h3>Merci <?php echo $name ?> <?php echo $lastname ?>,</h3>
                             <p>Votre <?php echo $objet ?> en <?php echo $room ?>,</p> 
                             <p>Le <?php echo $date ?> de <?php echo $time1 ?> à <?php echo $time2 ?>,</p> 
-                            <p>Avec <?php echo $pc ?> matériel informatique à <span style="color: #61CE70;"><b>bien été envoyer</b></span> !</p>
+                            <p>Avec <?php echo $pc ?> matériel informatique à <span style="color: #61CE70;">bien été envoyer</span> !</p>
                             <p>Votre adresse mail : <?php echo $email ?></p>
                             <br>
                             <br>
