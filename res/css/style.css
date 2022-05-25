@@ -8,7 +8,7 @@
     outline: none;
 }
 
-.color_blue { color: blue; }
+.blue-text { color: blue; }
 
 body {
     width: 100%;
@@ -262,5 +262,3 @@ footer {
 iframe {
     border-radius: 5px;
 }
-
-

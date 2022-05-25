@@ -4,8 +4,8 @@ const nom = document.getElementById("name")
 const lasname = document.getElementById("lastname")
 const email = document.getElementById("email")
 
-// MATERIALIZE
 document.addEventListener('DOMContentLoaded', function() {
+    // MATERIALIZE
     var elems = document.querySelectorAll('.datepicker');
     var instances = M.Datepicker.init(elems, {
         format: 'dd-mmm-yyyy',
@@ -25,21 +25,33 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.getElementById("hardware_material")
     var instances = M.FormSelect.init(elems);
 
+    // ScrollReveal
+    const sr = ScrollReveal()
+
+    sr.reveal(".title", {
+        origin: 'top',
+        distance: '50px',
+        duration: 2000
+    })
+
+    sr.reveal('.reveal-interval', { interval: 200 })
+    sr.reveal('.room-interval', { 
+        interval: 500,
+        origin: 'top',
+        distance: '50px' 
+    })
+
 });
 
 function hour() {
     // DATE
     const start_time = document.getElementById("time1")
     const end_time = document.getElementById("time2")
-    const date = document.querySelectorAll(".datepicker")
+    const date = document.getElementById("date")
     const today = new Date()
 
     console.log(start_time.value)
     console.log(today.getDate())
-
-    if (date[0].value[0] + "" + date[0].value[1] === 25) {
-        console.log(date[0].value[0] + "" + date[0].value[1] + "=" + "25") // prendre la valeur de 25 => pas encore fonctionnel
-    }
 
     if (start_time.value === end_time.value || start_time.value > end_time.value) {
         swal({
