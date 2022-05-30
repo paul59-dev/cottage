@@ -23,6 +23,35 @@
                         $time1 = htmlspecialchars($_POST['time1']);
                         $time2 = htmlspecialchars($_POST['time2']);
                         $pc = htmlspecialchars($_POST['pc']);
+
+                        // EMAIL
+                        // => access in produc
+                        $destil = "sduaez@cottage.fr";
+
+                        $mail_entete = "MIME-Version: 1.0\r\n";
+                        $mail_entete .= "From: assistance@cottage.fr";
+                        $email_entete .= 'Reply-To ' . $destil . "\r\n";
+                        $mail_entete .= 'Content-Type: text/html; charset="UTF-8"';
+                        $mail_entete .= "\r\nContent-Transfer-Encoding: 8bit\r\n";
+                        $mail_entete .= 'X-Mailer:PHP/' . phpversion() . "\r\n";
+                        // Sujet mail
+                        $sujet = "Demande de reservation de la " .$room;
+                        // Corps du mail
+                        $mail_corps = "Message de : <b>" .$lastname . $name . "<b><br/>";
+                        $mail_corps .= "Addresse mail : <b>" . $mail_user . "</b><br/>";
+                        $mail_corps .= "--------------------<br/>";
+                        $mail_corps .= "Salle : <b>" .$salle . "<br/>";
+                        $mail_corps .= "Objet de la réservation : <b>" . $objet . "</b><br />";
+                        $mail_corps .= "Le : <b>" .$date;
+                        $mail_corps .= "De <b>" . $time1 . " a " . $time2 . "</b><br />";
+
+                        if (mail($destil, $sujet, $mail_corps, $mail_entete))
+                        {
+                            header('Location: send.php');
+                        } else {
+                            echo '<script>alert("Une erreur est survenue")</script>';
+                        }
+                        
                         ?>
 
                         <div>
