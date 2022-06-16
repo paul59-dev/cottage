@@ -11,6 +11,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link rel="stylesheet" href="./res/css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 	<!-- ====== /MATERIALIZE - CSS - FONT AWESOME ======= -->

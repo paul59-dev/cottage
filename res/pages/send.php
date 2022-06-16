@@ -16,7 +16,7 @@
                     {
                         $room = htmlspecialchars($_POST['salle']);
                         $objet = htmlspecialchars($_POST['objet']);
-                        $lastname = htmlspecialchars($_POST['lastname']);
+                        $lastname = htmlspecialchars($_POST['lastname']);          
                         $name = htmlspecialchars($_POST['name']);
                         $email = htmlspecialchars($_POST['email']);
                         $date = htmlspecialchars($_POST['date']);
@@ -38,6 +38,9 @@
                         $sujet = "Demande de reservation de la " .$room;
                         // Corps du mail
                         $mail_corps = "Message de : <b>" .$lastname . $name . "<b><br/>";
+                        $mail_corps .= "Addresse mail : <b>" . $email . "</b><br/>";
+                        $mail_corps .= "--------------------<br/>";
+                        $mail_corps .= "Salle : <b>" .$room . "<br/>";
                         $mail_corps .= "Addresse mail : <b>" . $mail_user . "</b><br/>";
                         $mail_corps .= "--------------------<br/>";
                         $mail_corps .= "Salle : <b>" .$salle . "<br/>";
@@ -71,7 +74,6 @@
                                 </button>
                             </form>
                         </div>
-
     <?php    
                     }
                 }
@@ -81,4 +83,4 @@
 
     ?>
 </body>
-</html>
+</html> 
