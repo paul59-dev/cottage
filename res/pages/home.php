@@ -9,13 +9,13 @@
 
 		<div class='formulaire'>
 			<h1 class="title">Demande de salle</h1>
-			<form action="./res/pages/send.php" method="post" name="form" onsubmit="return hour()">
+			<form action="./send.php" method="post" name="form" onsubmit="return hour()">
 				<div class="c">
 					<div class='content'>
-						<div class="input-field col s12">
+						<div class="input-field col s12 reveal-interval">
 							<select id="select" name="salle">
 								<optgroup label="3ème Etage">      
-									<option value="Salle du Coneil" class="blue-text">Salle du Conseil</option>
+									<option value="Salle du Coneil">Salle du Conseil</option>
 								</optgroup>
 								<optgroup label="2ème Etage">
 									<option value="Salle Abricot">Salle Abricot</option>
@@ -54,13 +54,13 @@
 								<input id="time1" type="time" class="validate" name='time1' required>
 								<label for="last_name">HEURE DE DEPART</label>
 							</div>
-							<p> A </p>
+							<p class="reveal-interval"> À </p>
 							<div class="col s1 reveal-interval">
          						<input id="time2" type="time" class="validate" name='time2' required>
           						<label for="last_name">HEURE DE FIN</label>
         					</div>
 						</div>
-						<div class="input-data input-field material col s12 reveal-interval">
+						<div class="input-data input-hardware input-field material col s12 reveal-interval">
     						<select id="hardware_material" name="pc">
       							<option value="" disabled>Combient de PC avez-vous besoin ?</option>
 								<option value="0" selected>0</option>
@@ -125,7 +125,7 @@
 
 	<!-- JAVASCRIPT -->
 
-	<?php include "../../res/components/javascript.php"; ?>
+	<?php include "../components/javascript.php"; ?>
 
 	<!-- /JAVASCRIPT -->
 </body>

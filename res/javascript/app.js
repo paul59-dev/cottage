@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Datepicker.init(elems, {
         format: 'dd-mmm-yyyy',
         i18n: {
-            months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Novembre", "Décembre"],
+            months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
             monthsShort: ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Nov", "Déc"],
             weekdaysShort: ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"]
         }
@@ -31,19 +31,21 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal(".title", {
         origin: 'top',
         distance: '50px',
-        duration: 2000
+        duration: 3000
     })
 
-    sr.reveal('.reveal-interval', { interval: 200 })
+    sr.reveal('.reveal-interval', { interval: 250 })
     sr.reveal('.room-interval', { 
         interval: 500,
         origin: 'top',
-        distance: '50px' 
+        distance: '50px',
+        duration: 3000 
     })
 
 });
 
 function hour() {
+
     // DATE
     const start_time = document.getElementById("time1")
     const end_time = document.getElementById("time2")
@@ -63,5 +65,6 @@ function hour() {
     }
 
     return true
+
 }
 

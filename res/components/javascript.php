@@ -5,6 +5,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script src="../javascript.app.js"></script>
+<script src="../javascript/app.js"></script>
 
 <!-- ====== /JAVASCRIPT ====== -->

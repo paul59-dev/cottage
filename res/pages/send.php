@@ -30,7 +30,7 @@
 
                         $mail_entete = "MIME-Version: 1.0\r\n";
                         $mail_entete .= "From: assistance@cottage.fr";
-                        $email_entete .= 'Reply-To ' . $destil . "\r\n";
+                        $mail_entete .= 'Reply-To ' . $destil . "\r\n";
                         $mail_entete .= 'Content-Type: text/html; charset="UTF-8"';
                         $mail_entete .= "\r\nContent-Transfer-Encoding: 8bit\r\n";
                         $mail_entete .= 'X-Mailer:PHP/' . phpversion() . "\r\n";
@@ -41,16 +41,16 @@
                         $mail_corps .= "Addresse mail : <b>" . $email . "</b><br/>";
                         $mail_corps .= "--------------------<br/>";
                         $mail_corps .= "Salle : <b>" .$room . "<br/>";
-                        $mail_corps .= "Addresse mail : <b>" . $mail_user . "</b><br/>";
+                        $mail_corps .= "Addresse mail : <b>" . $email . "</b><br/>";
                         $mail_corps .= "--------------------<br/>";
-                        $mail_corps .= "Salle : <b>" .$salle . "<br/>";
+                        $mail_corps .= "Salle : <b>" .$room . "<br/>";
                         $mail_corps .= "Objet de la réservation : <b>" . $objet . "</b><br />";
                         $mail_corps .= "Le : <b>" .$date;
                         $mail_corps .= "De <b>" . $time1 . " a " . $time2 . "</b><br />";
 
-                        if (mail($destil, $sujet, $mail_corps, $mail_entete))
+                        if (mail($destil, $objet, $mail_corps, $mail_entete))
                         {
-                            header('Location: send.php');
+                            header('Location:send.php');
                         } else {
                             echo '<script>alert("Une erreur est survenue")</script>';
                         }
