@@ -19,7 +19,7 @@
 <div class="connexion-container">
 
     <img src="./res/images/LOGO-COTTAGE-2.jpg" alt="Logo Cottage">
-    <form action="./res/data/check.php" method="POST">
+    <form action="./res/pages/check.php" method="POST">
         <div class="pedocode">
             <input type="text" name="pedocode" required autocomplete="off">
             <div class="underline"></div>
